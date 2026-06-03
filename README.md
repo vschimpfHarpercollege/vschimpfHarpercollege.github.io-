@@ -1,1 +1,11 @@
 # web110-classwork
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Assignment 1</title>
+  </head>
+  <body>
+    <p>assignment exercise answers</p>
+  </body>
+</html>
