@@ -3,9 +3,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Assignment 1</title>
+    <title>WEB110 Internet Fundamentals</title>
   </head>
   <body>
-    <p>assignment exercise answers</p>
+    <p>Victoria Schimpf</p>
   </body>
 </html>
