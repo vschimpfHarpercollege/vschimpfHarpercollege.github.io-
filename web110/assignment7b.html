@@ -1,11 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="external styles" href="/html/external styles.css">
+
   <head>
     <meta charset="UTF-8">
-    <title>assignment7</title>
+    <title>assignment7b</title>
+    <link rel="external styles" href="/html/external styles.css">
   </head>
-  <body>
-    <p> </p>
-  </body>
+ <body>
+
+  <h1>Database Questions and Answers</h1>
+
+  <ol>
+    <!-- Question 1 -->
+    <li>
+      <strong>What fields are contained in the Categories table?</strong>
+      <ul>
+        <li>CategoryID</li>
+        <li>CategoryName</li>
+        <li>Description</li>
+      </ul>
+    </li>
+
+    <!-- Question 2 -->
+    <li>
+      <strong>What is the primary key for the Customers table?</strong>
+      <ul>
+        <li>CustomerID</li>
+      </ul>
+    </li>
+
+    <!-- Question 3 -->
+    <li>
+      <strong>How are the Orders table and the OrderDetails table related?</strong>
+      <p>They have a one-to-many relationship linked by the <code>OrderID</code> field. <code>OrderID</code> acts as the Primary Key in the Orders table and as a Foreign Key in the OrderDetails table.</p>
+    </li>
+
+    <!-- Question 4 -->
+    <li>
+      <strong>List the CustomerName for all customers in the country 'Italy'.</strong>
+      <ul>
+        <li>Franchi S.p.A.</li>
+        <li>Reggiani Caseifici</li>
+      </ul>
+    </li>
+
+    <!-- Question 5 -->
+    <li>
+      <strong>List the ProductName for all products in Category 1 with a price less than $5.00.</strong>
+      <ul>
+        <li>Guaraná Fantástica (Price: $4.50)</li>
+      </ul>
+    </li>
+
+    <!-- Question 6 -->
+    <li>
+      <strong>List the SupplierName for all suppliers from English-speaking countries (Australia, Canada, UK, USA).</strong>
+      <ul>
+        <li>Exotic Liquids (UK)</li>
+        <li>New Orleans Cajun Delights (USA)</li>
+        <li>Grandma Kelly's Homestead (USA)</li>
+        <li>Pavlova, Ltd. (Australia)</li>
+        <li>Specialty Biscuits, Ltd. (UK)</li>
+        <li>Bigfoot Breweries (USA)</li>
+        <li>New England Seafood Cannery (USA)</li>
+        <li>G'day, Mate (Australia)</li>
+        <li>Ma Maison (Canada)</li>
+        <li>Forêts d'érables (Canada)</li>
+      </ul>
+    </li>
+
+    <!-- Question 7 -->
+    <li>
+      <strong>List the first and last names of all employees having a birthday in September.</strong>
+      <ul>
+        <li>Margaret Peacock (Birth Date: September 19, 1937)</li>
+      </ul>
+    </li>
+
+    <!-- Question 8 -->
+    <li>
+      <strong>List the CustomerName and OrderID for all orders placed on 9 September 1996.</strong>
+      <ul>
+        <li>LILA-Supermercado (OrderID: 10302)</li>
+        <li>Quick-Stop (OrderID: 10303)</li>
+      </ul>
+    </li>
+
+    <!-- Question 9 -->
+    <li>
+      <strong>List the ProductName for all seafood products with a supplier from 'Boston'.</strong>
+      <p>Both are supplied by "New England Seafood Cannery" based in Boston, under Category 8 (Seafood):</p>
+      <ul>
+        <li>Boston Crab Meat</li>
+        <li>Jack's New England Clam Chowder</li>
+      </ul>
+    </li>
+
+    <!-- Question 10 -->
+    <li>
+      <strong>List the CustomerName and OrderID for all customers who ordered 'Aniseed Syrup', sorted in alphabetical order.</strong>
+      <ul>
+        <li>Federal Shipping (OrderID: 10355)</li>
+        <li>Hungry Owl All-Night Grocers (OrderID: 10335)</li>
+        <li>LILA-Supermercado (OrderID: 10321)</li>
+        <li>Reggiani Caseifici (OrderID: 10289)</li>
+      </ul>
+    </li>
+
+    <!-- Question 11 -->
+    <li>
+      <strong>List the ProductName, Quantity, Price, and ExtendedPrice (Quantity * Price) for orders 10344 and 10345.</strong>
+      <!-- A table works best here to keep the structured data neat! -->
+      <table border="1" cellpadding="5" style="border-collapse: collapse; margin-top: 10px;">
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price ($)</th>
+            <th>Extended Price ($)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10344</td>
+            <td>Wimmers gute Semmelknödel</td>
+            <td>35</td>
+            <td>33.25</td>
+            <td>1,163.75</td>
+          </tr>
+          <tr>
+            <td>10344</td>
+            <td>Mauri Gorgonzola</td>
+            <td>70</td>
+            <td>12.50</td>
+            <td>875.00</td>
+          </tr>
+          <tr>
+            <td>10345</td>
+            <td>Gula Malacca</td>
+            <td>70</td>
+            <td>19.45</td>
+            <td>1,361.50</td>
+          </tr>
+          <tr>
+            <td>10345</td>
+            <td>Rogede sild</td>
+            <td>15</td>
+            <td>9.50</td>
+            <td>142.50</td>
+          </tr>
+          <tr>
+            <td>10345</td>
+            <td>Rhönbräu Klosterbier</td>
+            <td>100</td>
+            <td>7.75</td>
+            <td>775.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+
+    <!-- Question 12 -->
+    <li>
+      <strong>List the first and last names and current age of all employees having a birthday in September.</strong>
+      <ul>
+        <li>Margaret Peacock (Born: September 19, 1937 | Current Age as of 2026: 88 years old)</li>
+      </ul>
+    </li>
+
+    <!-- Question 13 -->
+    <li>
+      <strong>List the OrderID, count of products ordered, and total order cost for orders 10344 and 10345.</strong>
+      <ul>
+        <li>Order 10344: 2 unique products | Total Cost: $2,038.75</li>
+        <li>Order 10345: 3 unique products | Total Cost: $2,279.00</li>
+      </ul>
+    </li>
+
+    <!-- Question 14 -->
+    <li>
+      <strong>List the total number of orders and total cost of orders shipped by 'Speedy Express' in February 1997.</strong>
+      <ul>
+        <li>Total Orders: 8</li>
+        <li>Total Shipped Cost: $5,781.40</li>
+      </ul>
+    </li>
+  </ol>
+
+</body>
 </html>
